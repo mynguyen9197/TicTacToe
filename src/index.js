@@ -156,7 +156,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board squares={current.squares} onClick={(i) => this.handleClick(i)} winner={winner&&winner.winningSquares}/>
           <br />
-          <button onClick={() => this.sortList()}>Ascending/Descending</button>
+          <button onClick={() => this.sortList()}>Reverse Move List</button>
         </div>
         <div className="game-info">
           <div>{status}</div>
