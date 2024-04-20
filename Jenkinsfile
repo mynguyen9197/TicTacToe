@@ -4,7 +4,15 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello Jenkins - I'm World..'
+                echo 'Hello Jenkins - I'
+            }
+        }
+        stage('Test') {
+            when {
+                branch "m*"
+            }
+            steps {
+                echo 'Hello Jenkins - I'
             }
         }
     }
